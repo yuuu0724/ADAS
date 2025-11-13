@@ -1,47 +1,45 @@
 # YOLOv5_RK3588_object_detect
 
-CSDN地址：[【YOLOv8部署至RK3588】模型训练→转换RKNN→开发板部署](https://blog.csdn.net/A_l_b_ert/article/details/141610417?spm=1001.2014.3001.5502)
+该工程主要用于编译生成可执行程序。**单独运行该可执行程序无法播放音频**，需要结合 `audio_player` 模块才能正常播报音频，但目标检测功能可以正常工作。
 
-QQ咨询（not free）：2506245294
+---
 
-# 目标检测仓库
+## 1. 项目代码介绍
 
-切记：一定要在RK系列开发板上运行，不要在虚拟机上跑，ARM64和X86不一样！
+| 文件 | 功能说明 |
+|------|---------|
+| `src/main.cpp` | 主程序运行文件 |
+| `src/postprocess.cpp` | 模型推理后的后处理代码 |
+| `src/yolov5.cpp` | 模型初始化、推理、反初始化等函数 |
+| `include/postprocess.h`, `include/yolov5.h` | 函数声明文件 |
 
-1.项目代码介绍
+---
 
-src/main.cpp ：主程序运行文件
+## 2. 配置文件说明
 
-src/postprocess.cpp: 模型推理后的后处理代码
+- `3rdparty/`：第三方库  
+- `build/`：编译输出目录  
+- `inputimage/`：输入图片文件夹  
+- `outputimage/`：输出图片文件夹  
+- `model/`：RKNN 模型文件及标签名 TXT 文件所在文件夹  
+- `rknn_lib/`：瑞芯微官方动态库 `librknnrt.so` 所在位置  
+- `per.sh`：配置 CPU 和 NPU 频率为最高的 shell 脚本  
 
-src/yolov5.cpp：模型初始化、推理、反初始化等函数代码
+> ⚠️ 注意：执行 `per.sh` 可以提升推理性能。
 
-include/postprocess.h、yolov5.h：各函数声明
+---
 
-2.配置文件介绍
+## 3. 编译运行步骤
 
-jpg2png.py是jpg图片转png格式的脚本，直接使用jpg图片读取会失败，所以先用该脚本转成png格式后再运行
+```bash
+# 进入编译目录
+cd build
 
-3rdparty 中是第三方库
+# 配置工程
+cmake ..
 
-build 是编译位置
+# 编译生成可执行文件
+make
 
-inputimage 是输入图片所在文件夹
-
-outputimage 是输出图片所在文件夹
-
-model 是RKNN模型以及标签名txt文件所在文件夹
-
-rknn_lib 是瑞芯微官方动态库librknnrt.so所在位置
-
-3.编译运行
-
-**①cd build**
-
-**②cmake ..**
-
-**③make**
-
-**④./rknn_yolov5_demo**
-
-此处统一说明：加QQ后直接说问题和小星星截图，对于常见的相同问题，很多都已在CSDN博客中提到了（RKNN转换流程是统一的，可去博主所有的RKNN相关博客下去翻评论），已在评论中详细解释过的问题，不予回复。
+# 运行可执行程序
+./myADAS
