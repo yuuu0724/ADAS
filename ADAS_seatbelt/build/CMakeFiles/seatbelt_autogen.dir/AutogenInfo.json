@@ -1,0 +1,78 @@
+{
+	"BUILD_DIR" : "/home/cat/duan/ADAS/ADAS_seatbelt/build/seatbelt_autogen",
+	"CMAKE_BINARY_DIR" : "/home/cat/duan/ADAS/ADAS_seatbelt/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/cat/duan/ADAS/ADAS_seatbelt/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/cat/duan/ADAS/ADAS_seatbelt",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/cat/duan/ADAS/ADAS_seatbelt",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/cat/duan/ADAS/ADAS_seatbelt/build/seatbelt_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/cat/duan/ADAS/ADAS_seatbelt/build/seatbelt_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/cat/duan/ADAS/ADAS_seatbelt/include",
+		"/home/cat/duan/ADAS/ADAS_seatbelt/utils",
+		"/home/cat/duan/ADAS/ADAS_seatbelt/3rdparty",
+		"/home/cat/duan/ADAS/ADAS_seatbelt",
+		"/home/cat/duan/ADAS/ADAS_seatbelt/3rdparty/stb_image",
+		"/home/cat/duan/ADAS/ADAS_seatbelt/3rdparty/jpeg_turbo/include",
+		"/home/cat/duan/ADAS/ADAS_seatbelt/3rdparty/librga/include",
+		"/usr/include/opencv4",
+		"/usr/include/aarch64-linux-gnu/qt5",
+		"/usr/include/aarch64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/aarch64-linux-gnu/qt5/QtGui",
+		"/usr/include/aarch64-linux-gnu/qt5/QtCore",
+		"/usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/c++/9",
+		"/usr/include/aarch64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/lib/gcc/aarch64-linux-gnu/9/include",
+		"/usr/local/include",
+		"/usr/include/aarch64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/cat/duan/ADAS/ADAS_seatbelt/build/seatbelt_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 1,
+	"PARSE_CACHE_FILE" : "/home/cat/duan/ADAS/ADAS_seatbelt/build/CMakeFiles/seatbelt_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"SETTINGS_FILE" : "/home/cat/duan/ADAS/ADAS_seatbelt/build/CMakeFiles/seatbelt_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "/home/cat/duan/ADAS/ADAS_seatbelt/src/DMSDetector.cpp", "MU" ],
+		[ "/home/cat/duan/ADAS/ADAS_seatbelt/src/display.cpp", "MU" ],
+		[ "/home/cat/duan/ADAS/ADAS_seatbelt/src/moc_display.cpp", "MU" ],
+		[ "/home/cat/duan/ADAS/ADAS_seatbelt/src/postprocess.cc", "MU" ],
+		[ "/home/cat/duan/ADAS/ADAS_seatbelt/src/threadpool.c", "MU" ],
+		[ "/home/cat/duan/ADAS/ADAS_seatbelt/src/yolov5.cc", "MU" ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

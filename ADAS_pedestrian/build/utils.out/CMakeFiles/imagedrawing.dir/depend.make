@@ -6,3 +6,5 @@ utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.o: ../utils/font.h
 utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.o: ../utils/image_drawing.c
 utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.o: ../utils/image_drawing.h
 
+utils.out/CMakeFiles/imagedrawing.dir/imagedrawing_autogen/mocs_compilation.cpp.o: utils.out/imagedrawing_autogen/mocs_compilation.cpp
+

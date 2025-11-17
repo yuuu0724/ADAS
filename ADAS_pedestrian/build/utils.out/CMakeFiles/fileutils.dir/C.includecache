@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cat/duan/ADAS-pedestrain/utils/file_utils.c
+/home/cat/duan/ADAS/ADAS_pedestrian/utils/file_utils.c
 stdio.h
 -
 stdlib.h

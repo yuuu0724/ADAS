@@ -1,4 +1,4 @@
-# Install script for directory: /home/cat/duan/ADAS-pedestrain/utils
+# Install script for directory: /home/cat/duan/ADAS/ADAS_pedestrian/utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

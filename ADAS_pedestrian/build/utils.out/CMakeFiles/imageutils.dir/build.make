@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cat/duan/ADAS-pedestrain
+CMAKE_SOURCE_DIR = /home/cat/duan/ADAS/ADAS_pedestrian
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cat/duan/ADAS-pedestrain/build
+CMAKE_BINARY_DIR = /home/cat/duan/ADAS/ADAS_pedestrian/build
 
 # Include any dependencies generated for this target.
 include utils.out/CMakeFiles/imageutils.dir/depend.make
@@ -57,32 +57,47 @@ include utils.out/CMakeFiles/imageutils.dir/progress.make
 # Include the compile flags for this target's objects.
 include utils.out/CMakeFiles/imageutils.dir/flags.make
 
+utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.o: utils.out/CMakeFiles/imageutils.dir/flags.make
+utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.o: utils.out/imageutils_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cat/duan/ADAS/ADAS_pedestrian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.o"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.o -c /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/imageutils_autogen/mocs_compilation.cpp
+
+utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.i"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/imageutils_autogen/mocs_compilation.cpp > CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.i
+
+utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.s"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/imageutils_autogen/mocs_compilation.cpp -o CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.s
+
 utils.out/CMakeFiles/imageutils.dir/image_utils.c.o: utils.out/CMakeFiles/imageutils.dir/flags.make
 utils.out/CMakeFiles/imageutils.dir/image_utils.c.o: ../utils/image_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cat/duan/ADAS-pedestrain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object utils.out/CMakeFiles/imageutils.dir/image_utils.c.o"
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/imageutils.dir/image_utils.c.o   -c /home/cat/duan/ADAS-pedestrain/utils/image_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cat/duan/ADAS/ADAS_pedestrian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object utils.out/CMakeFiles/imageutils.dir/image_utils.c.o"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/imageutils.dir/image_utils.c.o   -c /home/cat/duan/ADAS/ADAS_pedestrian/utils/image_utils.c
 
 utils.out/CMakeFiles/imageutils.dir/image_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/imageutils.dir/image_utils.c.i"
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cat/duan/ADAS-pedestrain/utils/image_utils.c > CMakeFiles/imageutils.dir/image_utils.c.i
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cat/duan/ADAS/ADAS_pedestrian/utils/image_utils.c > CMakeFiles/imageutils.dir/image_utils.c.i
 
 utils.out/CMakeFiles/imageutils.dir/image_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/imageutils.dir/image_utils.c.s"
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cat/duan/ADAS-pedestrain/utils/image_utils.c -o CMakeFiles/imageutils.dir/image_utils.c.s
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cat/duan/ADAS/ADAS_pedestrian/utils/image_utils.c -o CMakeFiles/imageutils.dir/image_utils.c.s
 
 # Object files for target imageutils
 imageutils_OBJECTS = \
+"CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/imageutils.dir/image_utils.c.o"
 
 # External object files for target imageutils
 imageutils_EXTERNAL_OBJECTS =
 
+utils.out/libimageutils.a: utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.o
 utils.out/libimageutils.a: utils.out/CMakeFiles/imageutils.dir/image_utils.c.o
 utils.out/libimageutils.a: utils.out/CMakeFiles/imageutils.dir/build.make
 utils.out/libimageutils.a: utils.out/CMakeFiles/imageutils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cat/duan/ADAS-pedestrain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libimageutils.a"
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && $(CMAKE_COMMAND) -P CMakeFiles/imageutils.dir/cmake_clean_target.cmake
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imageutils.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cat/duan/ADAS/ADAS_pedestrian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libimageutils.a"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && $(CMAKE_COMMAND) -P CMakeFiles/imageutils.dir/cmake_clean_target.cmake
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imageutils.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 utils.out/CMakeFiles/imageutils.dir/build: utils.out/libimageutils.a
@@ -90,10 +105,10 @@ utils.out/CMakeFiles/imageutils.dir/build: utils.out/libimageutils.a
 .PHONY : utils.out/CMakeFiles/imageutils.dir/build
 
 utils.out/CMakeFiles/imageutils.dir/clean:
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && $(CMAKE_COMMAND) -P CMakeFiles/imageutils.dir/cmake_clean.cmake
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && $(CMAKE_COMMAND) -P CMakeFiles/imageutils.dir/cmake_clean.cmake
 .PHONY : utils.out/CMakeFiles/imageutils.dir/clean
 
 utils.out/CMakeFiles/imageutils.dir/depend:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cat/duan/ADAS-pedestrain /home/cat/duan/ADAS-pedestrain/utils /home/cat/duan/ADAS-pedestrain/build /home/cat/duan/ADAS-pedestrain/build/utils.out /home/cat/duan/ADAS-pedestrain/build/utils.out/CMakeFiles/imageutils.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cat/duan/ADAS/ADAS_pedestrian /home/cat/duan/ADAS/ADAS_pedestrian/utils /home/cat/duan/ADAS/ADAS_pedestrian/build /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/CMakeFiles/imageutils.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : utils.out/CMakeFiles/imageutils.dir/depend
 

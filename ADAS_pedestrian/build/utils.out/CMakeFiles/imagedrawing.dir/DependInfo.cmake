@@ -1,15 +1,30 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/cat/duan/ADAS-pedestrain/utils/image_drawing.c" "/home/cat/duan/ADAS-pedestrain/build/utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.o"
+  "/home/cat/duan/ADAS/ADAS_pedestrian/utils/image_drawing.c" "/home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "utils.out/imagedrawing_autogen/include"
+  "../include"
+  "../utils"
+  "../3rdparty"
+  "/usr/include/opencv4"
+  )
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/imagedrawing_autogen/mocs_compilation.cpp" "/home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/CMakeFiles/imagedrawing.dir/imagedrawing_autogen/mocs_compilation.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "utils.out/imagedrawing_autogen/include"
   "../include"
   "../utils"
   "../3rdparty"

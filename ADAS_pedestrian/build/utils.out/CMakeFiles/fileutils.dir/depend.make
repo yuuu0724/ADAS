@@ -3,3 +3,5 @@
 
 utils.out/CMakeFiles/fileutils.dir/file_utils.c.o: ../utils/file_utils.c
 
+utils.out/CMakeFiles/fileutils.dir/fileutils_autogen/mocs_compilation.cpp.o: utils.out/fileutils_autogen/mocs_compilation.cpp
+

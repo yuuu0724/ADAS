@@ -3,5 +3,7 @@
 
 utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o
  ../3rdparty/libsndfile/include/sndfile.h
- /home/cat/duan/ADAS/utils/audio_utils.c
- /home/cat/duan/ADAS/utils/audio_utils.h
+ /home/cat/duan/ADAS/ADAS_seatbelt/utils/audio_utils.c
+ /home/cat/duan/ADAS/ADAS_seatbelt/utils/audio_utils.h
+utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.o
+ /home/cat/duan/ADAS/ADAS_seatbelt/build/utils.out/audioutils_autogen/mocs_compilation.cpp

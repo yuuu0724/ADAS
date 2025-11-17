@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cat/duan/ADAS-pedestrain
+CMAKE_SOURCE_DIR = /home/cat/duan/ADAS/ADAS_pedestrian
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cat/duan/ADAS-pedestrain/build
+CMAKE_BINARY_DIR = /home/cat/duan/ADAS/ADAS_pedestrian/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cat/duan/ADAS-pedestrain/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cat/duan/ADAS-pedestrain/build/CMakeFiles /home/cat/duan/ADAS-pedestrain/build/utils.out/CMakeFiles/progress.marks
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cat/duan/ADAS-pedestrain/build/CMakeFiles 0
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cat/duan/ADAS/ADAS_pedestrian/build/CMakeFiles /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/CMakeFiles/progress.marks
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cat/duan/ADAS/ADAS_pedestrian/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/clean
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/preinstall
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/preinstall
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 utils.out/CMakeFiles/audioutils.dir/rule:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/audioutils.dir/rule
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/audioutils.dir/rule
 .PHONY : utils.out/CMakeFiles/audioutils.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ audioutils: utils.out/CMakeFiles/audioutils.dir/rule
 
 # fast build rule for target.
 audioutils/fast:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/build
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/build
 .PHONY : audioutils/fast
 
 # Convenience name for target.
 utils.out/CMakeFiles/imageutils.dir/rule:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/imageutils.dir/rule
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/imageutils.dir/rule
 .PHONY : utils.out/CMakeFiles/imageutils.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ imageutils: utils.out/CMakeFiles/imageutils.dir/rule
 
 # fast build rule for target.
 imageutils/fast:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/build
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/build
 .PHONY : imageutils/fast
 
 # Convenience name for target.
 utils.out/CMakeFiles/imagedrawing.dir/rule:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/imagedrawing.dir/rule
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/imagedrawing.dir/rule
 .PHONY : utils.out/CMakeFiles/imagedrawing.dir/rule
 
 # Convenience name for target.
@@ -198,12 +198,12 @@ imagedrawing: utils.out/CMakeFiles/imagedrawing.dir/rule
 
 # fast build rule for target.
 imagedrawing/fast:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/build
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/build
 .PHONY : imagedrawing/fast
 
 # Convenience name for target.
 utils.out/CMakeFiles/fileutils.dir/rule:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/fileutils.dir/rule
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/fileutils.dir/rule
 .PHONY : utils.out/CMakeFiles/fileutils.dir/rule
 
 # Convenience name for target.
@@ -213,8 +213,68 @@ fileutils: utils.out/CMakeFiles/fileutils.dir/rule
 
 # fast build rule for target.
 fileutils/fast:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/build
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/build
 .PHONY : fileutils/fast
+
+# Convenience name for target.
+utils.out/CMakeFiles/audioutils_autogen.dir/rule:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/audioutils_autogen.dir/rule
+.PHONY : utils.out/CMakeFiles/audioutils_autogen.dir/rule
+
+# Convenience name for target.
+audioutils_autogen: utils.out/CMakeFiles/audioutils_autogen.dir/rule
+
+.PHONY : audioutils_autogen
+
+# fast build rule for target.
+audioutils_autogen/fast:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/audioutils_autogen.dir/build.make utils.out/CMakeFiles/audioutils_autogen.dir/build
+.PHONY : audioutils_autogen/fast
+
+# Convenience name for target.
+utils.out/CMakeFiles/imageutils_autogen.dir/rule:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/imageutils_autogen.dir/rule
+.PHONY : utils.out/CMakeFiles/imageutils_autogen.dir/rule
+
+# Convenience name for target.
+imageutils_autogen: utils.out/CMakeFiles/imageutils_autogen.dir/rule
+
+.PHONY : imageutils_autogen
+
+# fast build rule for target.
+imageutils_autogen/fast:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imageutils_autogen.dir/build.make utils.out/CMakeFiles/imageutils_autogen.dir/build
+.PHONY : imageutils_autogen/fast
+
+# Convenience name for target.
+utils.out/CMakeFiles/imagedrawing_autogen.dir/rule:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/imagedrawing_autogen.dir/rule
+.PHONY : utils.out/CMakeFiles/imagedrawing_autogen.dir/rule
+
+# Convenience name for target.
+imagedrawing_autogen: utils.out/CMakeFiles/imagedrawing_autogen.dir/rule
+
+.PHONY : imagedrawing_autogen
+
+# fast build rule for target.
+imagedrawing_autogen/fast:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing_autogen.dir/build.make utils.out/CMakeFiles/imagedrawing_autogen.dir/build
+.PHONY : imagedrawing_autogen/fast
+
+# Convenience name for target.
+utils.out/CMakeFiles/fileutils_autogen.dir/rule:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f CMakeFiles/Makefile2 utils.out/CMakeFiles/fileutils_autogen.dir/rule
+.PHONY : utils.out/CMakeFiles/fileutils_autogen.dir/rule
+
+# Convenience name for target.
+fileutils_autogen: utils.out/CMakeFiles/fileutils_autogen.dir/rule
+
+.PHONY : fileutils_autogen
+
+# fast build rule for target.
+fileutils_autogen/fast:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/fileutils_autogen.dir/build.make utils.out/CMakeFiles/fileutils_autogen.dir/build
+.PHONY : fileutils_autogen/fast
 
 audio_utils.o: audio_utils.c.o
 
@@ -222,7 +282,7 @@ audio_utils.o: audio_utils.c.o
 
 # target to build an object file
 audio_utils.c.o:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o
 .PHONY : audio_utils.c.o
 
 audio_utils.i: audio_utils.c.i
@@ -231,7 +291,7 @@ audio_utils.i: audio_utils.c.i
 
 # target to preprocess a source file
 audio_utils.c.i:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/audio_utils.c.i
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/audio_utils.c.i
 .PHONY : audio_utils.c.i
 
 audio_utils.s: audio_utils.c.s
@@ -240,8 +300,35 @@ audio_utils.s: audio_utils.c.s
 
 # target to generate assembly for a file
 audio_utils.c.s:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/audio_utils.c.s
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/audio_utils.c.s
 .PHONY : audio_utils.c.s
+
+audioutils_autogen/mocs_compilation.o: audioutils_autogen/mocs_compilation.cpp.o
+
+.PHONY : audioutils_autogen/mocs_compilation.o
+
+# target to build an object file
+audioutils_autogen/mocs_compilation.cpp.o:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.o
+.PHONY : audioutils_autogen/mocs_compilation.cpp.o
+
+audioutils_autogen/mocs_compilation.i: audioutils_autogen/mocs_compilation.cpp.i
+
+.PHONY : audioutils_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+audioutils_autogen/mocs_compilation.cpp.i:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.i
+.PHONY : audioutils_autogen/mocs_compilation.cpp.i
+
+audioutils_autogen/mocs_compilation.s: audioutils_autogen/mocs_compilation.cpp.s
+
+.PHONY : audioutils_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+audioutils_autogen/mocs_compilation.cpp.s:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/audioutils.dir/build.make utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.s
+.PHONY : audioutils_autogen/mocs_compilation.cpp.s
 
 file_utils.o: file_utils.c.o
 
@@ -249,7 +336,7 @@ file_utils.o: file_utils.c.o
 
 # target to build an object file
 file_utils.c.o:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/file_utils.c.o
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/file_utils.c.o
 .PHONY : file_utils.c.o
 
 file_utils.i: file_utils.c.i
@@ -258,7 +345,7 @@ file_utils.i: file_utils.c.i
 
 # target to preprocess a source file
 file_utils.c.i:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/file_utils.c.i
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/file_utils.c.i
 .PHONY : file_utils.c.i
 
 file_utils.s: file_utils.c.s
@@ -267,8 +354,35 @@ file_utils.s: file_utils.c.s
 
 # target to generate assembly for a file
 file_utils.c.s:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/file_utils.c.s
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/file_utils.c.s
 .PHONY : file_utils.c.s
+
+fileutils_autogen/mocs_compilation.o: fileutils_autogen/mocs_compilation.cpp.o
+
+.PHONY : fileutils_autogen/mocs_compilation.o
+
+# target to build an object file
+fileutils_autogen/mocs_compilation.cpp.o:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/fileutils_autogen/mocs_compilation.cpp.o
+.PHONY : fileutils_autogen/mocs_compilation.cpp.o
+
+fileutils_autogen/mocs_compilation.i: fileutils_autogen/mocs_compilation.cpp.i
+
+.PHONY : fileutils_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+fileutils_autogen/mocs_compilation.cpp.i:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/fileutils_autogen/mocs_compilation.cpp.i
+.PHONY : fileutils_autogen/mocs_compilation.cpp.i
+
+fileutils_autogen/mocs_compilation.s: fileutils_autogen/mocs_compilation.cpp.s
+
+.PHONY : fileutils_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+fileutils_autogen/mocs_compilation.cpp.s:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/fileutils.dir/build.make utils.out/CMakeFiles/fileutils.dir/fileutils_autogen/mocs_compilation.cpp.s
+.PHONY : fileutils_autogen/mocs_compilation.cpp.s
 
 image_drawing.o: image_drawing.c.o
 
@@ -276,7 +390,7 @@ image_drawing.o: image_drawing.c.o
 
 # target to build an object file
 image_drawing.c.o:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.o
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.o
 .PHONY : image_drawing.c.o
 
 image_drawing.i: image_drawing.c.i
@@ -285,7 +399,7 @@ image_drawing.i: image_drawing.c.i
 
 # target to preprocess a source file
 image_drawing.c.i:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.i
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.i
 .PHONY : image_drawing.c.i
 
 image_drawing.s: image_drawing.c.s
@@ -294,7 +408,7 @@ image_drawing.s: image_drawing.c.s
 
 # target to generate assembly for a file
 image_drawing.c.s:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.s
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/image_drawing.c.s
 .PHONY : image_drawing.c.s
 
 image_utils.o: image_utils.c.o
@@ -303,7 +417,7 @@ image_utils.o: image_utils.c.o
 
 # target to build an object file
 image_utils.c.o:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/image_utils.c.o
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/image_utils.c.o
 .PHONY : image_utils.c.o
 
 image_utils.i: image_utils.c.i
@@ -312,7 +426,7 @@ image_utils.i: image_utils.c.i
 
 # target to preprocess a source file
 image_utils.c.i:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/image_utils.c.i
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/image_utils.c.i
 .PHONY : image_utils.c.i
 
 image_utils.s: image_utils.c.s
@@ -321,8 +435,62 @@ image_utils.s: image_utils.c.s
 
 # target to generate assembly for a file
 image_utils.c.s:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/image_utils.c.s
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/image_utils.c.s
 .PHONY : image_utils.c.s
+
+imagedrawing_autogen/mocs_compilation.o: imagedrawing_autogen/mocs_compilation.cpp.o
+
+.PHONY : imagedrawing_autogen/mocs_compilation.o
+
+# target to build an object file
+imagedrawing_autogen/mocs_compilation.cpp.o:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/imagedrawing_autogen/mocs_compilation.cpp.o
+.PHONY : imagedrawing_autogen/mocs_compilation.cpp.o
+
+imagedrawing_autogen/mocs_compilation.i: imagedrawing_autogen/mocs_compilation.cpp.i
+
+.PHONY : imagedrawing_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+imagedrawing_autogen/mocs_compilation.cpp.i:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/imagedrawing_autogen/mocs_compilation.cpp.i
+.PHONY : imagedrawing_autogen/mocs_compilation.cpp.i
+
+imagedrawing_autogen/mocs_compilation.s: imagedrawing_autogen/mocs_compilation.cpp.s
+
+.PHONY : imagedrawing_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+imagedrawing_autogen/mocs_compilation.cpp.s:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imagedrawing.dir/build.make utils.out/CMakeFiles/imagedrawing.dir/imagedrawing_autogen/mocs_compilation.cpp.s
+.PHONY : imagedrawing_autogen/mocs_compilation.cpp.s
+
+imageutils_autogen/mocs_compilation.o: imageutils_autogen/mocs_compilation.cpp.o
+
+.PHONY : imageutils_autogen/mocs_compilation.o
+
+# target to build an object file
+imageutils_autogen/mocs_compilation.cpp.o:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.o
+.PHONY : imageutils_autogen/mocs_compilation.cpp.o
+
+imageutils_autogen/mocs_compilation.i: imageutils_autogen/mocs_compilation.cpp.i
+
+.PHONY : imageutils_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+imageutils_autogen/mocs_compilation.cpp.i:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.i
+.PHONY : imageutils_autogen/mocs_compilation.cpp.i
+
+imageutils_autogen/mocs_compilation.s: imageutils_autogen/mocs_compilation.cpp.s
+
+.PHONY : imageutils_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+imageutils_autogen/mocs_compilation.cpp.s:
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(MAKE) -f utils.out/CMakeFiles/imageutils.dir/build.make utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.s
+.PHONY : imageutils_autogen/mocs_compilation.cpp.s
 
 # Help Target
 help:
@@ -340,18 +508,34 @@ help:
 	@echo "... imageutils"
 	@echo "... imagedrawing"
 	@echo "... fileutils"
+	@echo "... audioutils_autogen"
+	@echo "... imageutils_autogen"
+	@echo "... imagedrawing_autogen"
+	@echo "... fileutils_autogen"
 	@echo "... audio_utils.o"
 	@echo "... audio_utils.i"
 	@echo "... audio_utils.s"
+	@echo "... audioutils_autogen/mocs_compilation.o"
+	@echo "... audioutils_autogen/mocs_compilation.i"
+	@echo "... audioutils_autogen/mocs_compilation.s"
 	@echo "... file_utils.o"
 	@echo "... file_utils.i"
 	@echo "... file_utils.s"
+	@echo "... fileutils_autogen/mocs_compilation.o"
+	@echo "... fileutils_autogen/mocs_compilation.i"
+	@echo "... fileutils_autogen/mocs_compilation.s"
 	@echo "... image_drawing.o"
 	@echo "... image_drawing.i"
 	@echo "... image_drawing.s"
 	@echo "... image_utils.o"
 	@echo "... image_utils.i"
 	@echo "... image_utils.s"
+	@echo "... imagedrawing_autogen/mocs_compilation.o"
+	@echo "... imagedrawing_autogen/mocs_compilation.i"
+	@echo "... imagedrawing_autogen/mocs_compilation.s"
+	@echo "... imageutils_autogen/mocs_compilation.o"
+	@echo "... imageutils_autogen/mocs_compilation.i"
+	@echo "... imageutils_autogen/mocs_compilation.s"
 .PHONY : help
 
 
@@ -363,6 +547,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

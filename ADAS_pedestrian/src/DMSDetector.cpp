@@ -12,6 +12,9 @@
 #include <cmath>
 #include <threadpool.h>
 #include <mqueue.h>
+#include "display.h"
+#include <QApplication>
+
 
 using namespace std;
 using namespace cv;
@@ -19,6 +22,8 @@ using namespace chrono;
 
 queue<Mat> frame_queue;
 queue<Mat> display_queue;
+
+DisplayWindow *displayWindow;
 
 static pthread_mutex_t frame_mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t frame_cond = PTHREAD_COND_INITIALIZER;
@@ -209,36 +214,24 @@ void *DisplayThread(void *arg)
         }
         pthread_mutex_unlock(&display_mutex);
 
-        if (frame.empty()) {
+        if (!frame.empty() && displayWindow) {
+            displayWindow->pushFrame(frame);
+        }  
             usleep(5000);
-            continue;
-        }
-
-        frame_count++;
-        imshow("Pedestrian ADAS", frame);
-
-        auto now = steady_clock::now();
-        double elapsed = duration_cast<duration<double>>(now - last_time).count();
-        if (elapsed >= 1.0) {
-            fps = frame_count / elapsed;
-            frame_count = 0;
-            last_time = now;
-        }
-
-        char fps_text[64];
-        sprintf(fps_text, "FPS: %.1f", fps);
-        putText(frame, fps_text, Point(20, 40), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 255, 0), 2);
-
-        if (waitKey(display_interval_ms) == 27) {
-            system_exit = true;
-            break;
-        }
     }
     return NULL;
 }
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
+    QApplication app(argc, argv);
+
+    int screenWidth = 512;
+    int screenHeight = 600;
+
+    displayWindow = new DisplayWindow(screenWidth, screenHeight);
+    displayWindow->showFullScreen();
+
     if (argc >= 2) { use_camera = false; video_path = argv[1]; }
 
     cout << "[INFO] 初始化 YOLOV5 模型..." << endl;
@@ -259,6 +252,8 @@ int main(int argc, char const *argv[])
     pthread_create(&Seat_belt_detection_thread_tid, NULL, Seat_belt_detection_thread, (void *)&pool);
     pthread_create(&DisplayThread_tid, NULL, DisplayThread, NULL);
 
+    int ret = app.exec();
+
     pthread_join(Camera_Capture_Thread_tid, NULL);
     pthread_join(Seat_belt_detection_thread_tid, NULL);
     pthread_join(DisplayThread_tid, NULL);
@@ -266,5 +261,5 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < NPU_CORE_NUM; i++)
         release_yolov5_model(&yolov5_ctx[i]);
 
-    return 0;
+    return ret;
 }

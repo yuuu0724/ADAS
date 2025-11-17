@@ -1,4 +1,4 @@
-# Install script for directory: /home/cat/duan/ADAS-pedestrain
+# Install script for directory: /home/cat/duan/ADAS/ADAS_pedestrian
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,37 +38,37 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./myADAS" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./myADAS")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./pedestrian" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./pedestrian")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./myADAS"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./pedestrian"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/home/cat/duan/ADAS-pedestrain/build/myADAS")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./myADAS" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./myADAS")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/home/cat/duan/ADAS/ADAS_pedestrian/build/pedestrian")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./pedestrian" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./pedestrian")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./myADAS"
-         OLD_RPATH "/home/cat/duan/ADAS-pedestrain/rknn_lib:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./pedestrian"
+         OLD_RPATH "/home/cat/duan/ADAS/ADAS_pedestrian/rknn_lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./myADAS")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./pedestrian")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/model" TYPE FILE FILES "/home/cat/duan/ADAS-pedestrain/../model/bus.jpg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/model" TYPE FILE FILES "/home/cat/duan/ADAS/ADAS_pedestrian/../model/bus.jpg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/model" TYPE FILE FILES "/home/cat/duan/ADAS-pedestrain/../model/2classes.txt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/model" TYPE FILE FILES "/home/cat/duan/ADAS/ADAS_pedestrian/../model/2classes.txt")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cat/duan/ADAS-pedestrain/build/3rdparty.out/cmake_install.cmake")
-  include("/home/cat/duan/ADAS-pedestrain/build/utils.out/cmake_install.cmake")
+  include("/home/cat/duan/ADAS/ADAS_pedestrian/build/3rdparty.out/cmake_install.cmake")
+  include("/home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/cmake_install.cmake")
 
 endif()
 
@@ -80,5 +80,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cat/duan/ADAS-pedestrain/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cat/duan/ADAS/ADAS_pedestrian/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

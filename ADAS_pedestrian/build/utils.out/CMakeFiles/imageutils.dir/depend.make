@@ -19,3 +19,5 @@ utils.out/CMakeFiles/imageutils.dir/image_utils.c.o: ../utils/file_utils.h
 utils.out/CMakeFiles/imageutils.dir/image_utils.c.o: ../utils/image_utils.c
 utils.out/CMakeFiles/imageutils.dir/image_utils.c.o: ../utils/image_utils.h
 
+utils.out/CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.o: utils.out/imageutils_autogen/mocs_compilation.cpp
+

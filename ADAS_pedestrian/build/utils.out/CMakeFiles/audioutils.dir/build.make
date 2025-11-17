@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cat/duan/ADAS-pedestrain
+CMAKE_SOURCE_DIR = /home/cat/duan/ADAS/ADAS_pedestrian
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cat/duan/ADAS-pedestrain/build
+CMAKE_BINARY_DIR = /home/cat/duan/ADAS/ADAS_pedestrian/build
 
 # Include any dependencies generated for this target.
 include utils.out/CMakeFiles/audioutils.dir/depend.make
@@ -57,32 +57,47 @@ include utils.out/CMakeFiles/audioutils.dir/progress.make
 # Include the compile flags for this target's objects.
 include utils.out/CMakeFiles/audioutils.dir/flags.make
 
+utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.o: utils.out/CMakeFiles/audioutils.dir/flags.make
+utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.o: utils.out/audioutils_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cat/duan/ADAS/ADAS_pedestrian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.o"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.o -c /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/audioutils_autogen/mocs_compilation.cpp
+
+utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.i"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/audioutils_autogen/mocs_compilation.cpp > CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.i
+
+utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.s"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/audioutils_autogen/mocs_compilation.cpp -o CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.s
+
 utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o: utils.out/CMakeFiles/audioutils.dir/flags.make
 utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o: ../utils/audio_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cat/duan/ADAS-pedestrain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o"
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/audioutils.dir/audio_utils.c.o   -c /home/cat/duan/ADAS-pedestrain/utils/audio_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cat/duan/ADAS/ADAS_pedestrian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/audioutils.dir/audio_utils.c.o   -c /home/cat/duan/ADAS/ADAS_pedestrian/utils/audio_utils.c
 
 utils.out/CMakeFiles/audioutils.dir/audio_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/audioutils.dir/audio_utils.c.i"
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cat/duan/ADAS-pedestrain/utils/audio_utils.c > CMakeFiles/audioutils.dir/audio_utils.c.i
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cat/duan/ADAS/ADAS_pedestrian/utils/audio_utils.c > CMakeFiles/audioutils.dir/audio_utils.c.i
 
 utils.out/CMakeFiles/audioutils.dir/audio_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/audioutils.dir/audio_utils.c.s"
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cat/duan/ADAS-pedestrain/utils/audio_utils.c -o CMakeFiles/audioutils.dir/audio_utils.c.s
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cat/duan/ADAS/ADAS_pedestrian/utils/audio_utils.c -o CMakeFiles/audioutils.dir/audio_utils.c.s
 
 # Object files for target audioutils
 audioutils_OBJECTS = \
+"CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/audioutils.dir/audio_utils.c.o"
 
 # External object files for target audioutils
 audioutils_EXTERNAL_OBJECTS =
 
+utils.out/libaudioutils.a: utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.o
 utils.out/libaudioutils.a: utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o
 utils.out/libaudioutils.a: utils.out/CMakeFiles/audioutils.dir/build.make
 utils.out/libaudioutils.a: utils.out/CMakeFiles/audioutils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cat/duan/ADAS-pedestrain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libaudioutils.a"
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && $(CMAKE_COMMAND) -P CMakeFiles/audioutils.dir/cmake_clean_target.cmake
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/audioutils.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cat/duan/ADAS/ADAS_pedestrian/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libaudioutils.a"
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && $(CMAKE_COMMAND) -P CMakeFiles/audioutils.dir/cmake_clean_target.cmake
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/audioutils.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 utils.out/CMakeFiles/audioutils.dir/build: utils.out/libaudioutils.a
@@ -90,10 +105,10 @@ utils.out/CMakeFiles/audioutils.dir/build: utils.out/libaudioutils.a
 .PHONY : utils.out/CMakeFiles/audioutils.dir/build
 
 utils.out/CMakeFiles/audioutils.dir/clean:
-	cd /home/cat/duan/ADAS-pedestrain/build/utils.out && $(CMAKE_COMMAND) -P CMakeFiles/audioutils.dir/cmake_clean.cmake
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out && $(CMAKE_COMMAND) -P CMakeFiles/audioutils.dir/cmake_clean.cmake
 .PHONY : utils.out/CMakeFiles/audioutils.dir/clean
 
 utils.out/CMakeFiles/audioutils.dir/depend:
-	cd /home/cat/duan/ADAS-pedestrain/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cat/duan/ADAS-pedestrain /home/cat/duan/ADAS-pedestrain/utils /home/cat/duan/ADAS-pedestrain/build /home/cat/duan/ADAS-pedestrain/build/utils.out /home/cat/duan/ADAS-pedestrain/build/utils.out/CMakeFiles/audioutils.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cat/duan/ADAS/ADAS_pedestrian/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cat/duan/ADAS/ADAS_pedestrian /home/cat/duan/ADAS/ADAS_pedestrian/utils /home/cat/duan/ADAS/ADAS_pedestrian/build /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out /home/cat/duan/ADAS/ADAS_pedestrian/build/utils.out/CMakeFiles/audioutils.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : utils.out/CMakeFiles/audioutils.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/cat/duan/ADAS/utils
+# Install script for directory: /home/cat/duan/ADAS/ADAS_seatbelt/utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

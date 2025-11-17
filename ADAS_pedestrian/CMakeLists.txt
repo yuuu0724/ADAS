@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(myADAS)
+project(pedestrian)
 
 if (ENABLE_ASAN)
 	message(STATUS "BUILD WITH ADDRESS SANITIZER")
@@ -8,6 +8,12 @@ if (ENABLE_ASAN)
 	set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
 	set (CMAKE_LINKER_FLAGS_DEBUG "${CMAKE_LINKER_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
 endif ()
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
+find_package(Qt5 COMPONENTS Widgets Gui Core REQUIRED)
 
 # 设置头文件目录
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
@@ -46,6 +52,8 @@ add_executable(${PROJECT_NAME}
     src/postprocess.cc
     src/DMSDetector.cpp
     src/threadpool.c
+    src/display.cpp
+    src/moc_display.cpp
     ${rknpu_yolov5_file}
 )
 
@@ -57,6 +65,7 @@ link_directories(${RKNNRT_LIB_PATH}) #使用 link_directories 明确指定 rknnr
 set(CMAKE_INSTALL_RPATH "$ORIGIN/../lib")
 
 find_package(Threads REQUIRED)
+find_package(Qt5 REQUIRED COMPONENTS Widgets Gui)
 target_link_libraries(${PROJECT_NAME}
     imageutils
     fileutils
@@ -67,6 +76,9 @@ target_link_libraries(${PROJECT_NAME}
     rknnrt
     Threads::Threads
     rt
+    Qt5::Widgets
+    Qt5::Gui
+    Qt5::Core
 )
 
 if (CMAKE_SYSTEM_NAME STREQUAL "Linux")

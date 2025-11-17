@@ -1,2 +1,2 @@
-/usr/bin/ar qc libimageutils.a  CMakeFiles/imageutils.dir/image_utils.c.o
+/usr/bin/ar qc libimageutils.a  CMakeFiles/imageutils.dir/imageutils_autogen/mocs_compilation.cpp.o CMakeFiles/imageutils.dir/image_utils.c.o
 /usr/bin/ranlib libimageutils.a

@@ -5,3 +5,5 @@ utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o: ../3rdparty/libsndfile/incl
 utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o: ../utils/audio_utils.c
 utils.out/CMakeFiles/audioutils.dir/audio_utils.c.o: ../utils/audio_utils.h
 
+utils.out/CMakeFiles/audioutils.dir/audioutils_autogen/mocs_compilation.cpp.o: utils.out/audioutils_autogen/mocs_compilation.cpp
+
