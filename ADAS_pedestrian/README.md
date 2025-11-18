@@ -12,7 +12,8 @@
 | `src/postprocess.cpp` | 模型推理后的后处理代码 |
 | `src/yolov5.cpp` | 模型初始化、推理、反初始化等函数 |
 | `include/postprocess.h`, `include/yolov5.h` | 函数声明文件 |
-
+| `imoc_display.cpp`| 手动用 moc生成的文件，用于支持Qt的信号与槽、QObject 类的元信息以及 Q_PROPERTY 等特性、moc display.h -o moc_display.cpp|
+| `display.cpp`| Qt显示配置文件|
 ---
 
 ## 2. 配置文件说明
